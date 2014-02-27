@@ -1,0 +1,24 @@
+{
+  "sites": {
+    "site": [
+      {
+        "id": "01",
+        "name": "Sito 1",
+        "src": "localhost/root/coupon/sito1",
+        "expiryDate": "29 Ago 2013"
+      },
+      {
+        "id": "02",
+        "name": "Sito 2",
+        "src": "localhost/root/coupon/sito2",
+        "expiryDate": "30 Ago 2013"
+      },
+      {
+        "id": "Sito 3",
+        "name": "Sito 3",
+        "src": "localhost/root/coupon/sito2",
+        "expiryDate": "31 Ago 2013"
+      }
+    ]
+  }
+}
