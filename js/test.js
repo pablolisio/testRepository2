@@ -1,6 +1,7 @@
 // Defines una funcion de javascript 
 function prueba() { 
 // Haces la consulta al servidor 
+alert("hola" + "papa");
 $.post("http://compremosbien.com/bus", {
                texto : "hola"
            }, function(data) {
