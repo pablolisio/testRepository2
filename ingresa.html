@@ -32,7 +32,7 @@
             writer.onwriteend = function(evt) {
                 console.log("contents of file now 'some sample'");
                 writer.seek(4);
-                writer.write(" different text");
+                writer.write(" different text PABLO");
                 writer.onwriteend = function(evt){
                     console.log("contents of file now 'some different text'");
                 }
