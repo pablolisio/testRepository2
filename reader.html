@@ -17,7 +17,7 @@
     }
 
     function gotFS(fileSystem) {
-        fileSystem.root.getFile("test/myTest1.txt", null, gotFileEntry, fail);
+        fileSystem.root.getFile("myTest1.txt", null, gotFileEntry, fail);
     }
 
     function gotFileEntry(fileEntry) {
