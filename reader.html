@@ -8,8 +8,6 @@
 
     // Wait for device API libraries to load
     //
-	var var1;
-	var var2;
     document.addEventListener("deviceready", onDeviceReady, false);
 
     // device APIs are available
@@ -20,7 +18,7 @@
     }
 
     function gotFS(fileSystem) {
-        fileSystem.root.getFile("/sdcard/myTest1.txt", null, gotFileEntry, fail);
+        fileSystem.root.getFile("myTest1.txt", null, gotFileEntry, fail);
     }
 
     function gotFileEntry(fileEntry) {
@@ -28,7 +26,7 @@
     }
 
     function gotFile(file){
-        readDataUrl(file);
+        //readDataUrl(file);
         readAsText(file);
     }
 
@@ -49,9 +47,7 @@
         reader.onloadend = function(evt) {
             console.log("Read as text");
             console.log(evt.target.result);
-			var2 = evt.target.result;
-			alert("jaq2");
-			alert(var2);
+			alert(evt.target.result);
         };
         reader.readAsText(file);
     }
@@ -60,11 +56,6 @@
         console.log(error.code);
     }
 	
-	alert("saa111aa");
-	alert(var1);
-	alert(var2);
-	
-
     </script>
   </head>
   <body>
