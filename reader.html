@@ -13,6 +13,7 @@
     // device APIs are available
     //
     function onDeviceReady() {
+		alert("leyendo archivo..");
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
     }
 
