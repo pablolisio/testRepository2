@@ -8,9 +8,9 @@
 
     // Wait for device API libraries to load
     //
-    var pepe = document.addEventListener("deviceready", onDeviceReady, false);
-	alert("yeah");
-	alert(pepe);
+	var var1;
+	var var2;
+    document.addEventListener("deviceready", onDeviceReady, false);
 
     // device APIs are available
     //
@@ -37,6 +37,7 @@
         reader.onloadend = function(evt) {
             console.log("Read as data URL");
             console.log(evt.target.result);
+			var1 = evt.target.result;
         };
         reader.readAsDataURL(file);
     }
@@ -46,6 +47,7 @@
         reader.onloadend = function(evt) {
             console.log("Read as text");
             console.log(evt.target.result);
+			var2 = evt.target.result;
         };
         reader.readAsText(file);
     }
@@ -53,6 +55,11 @@
     function fail(error) {
         console.log(error.code);
     }
+	
+	alert("sisi");
+	alert(var1);
+	alert(var2);
+	
 
     </script>
   </head>
