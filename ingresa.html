@@ -18,7 +18,7 @@
     }
 
     function gotFS(fileSystem) {
-        fileSystem.root.getFile("myTest1.txt", {create: true, exclusive: false}, gotFileEntry, fail);
+        fileSystem.root.getFile("test/myTest1.txt", {create: true, exclusive: false}, gotFileEntry, fail);
     }
 
     function gotFileEntry(fileEntry) {
@@ -26,7 +26,7 @@
     }
 
     function gotFileWriter(writer) {
-        writer.write("Este es el contenido PABLO GENIO!!!!");
+        writer.write("Este es el contenido PABLO CAPO!!!!");
     }
 
     function fail(error) {
