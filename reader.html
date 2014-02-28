@@ -20,7 +20,7 @@
     }
 
     function gotFS(fileSystem) {
-        fileSystem.root.getFile("myTest1.txt", null, gotFileEntry, fail);
+        fileSystem.root.getFile("/sdcard/myTest1.txt", null, gotFileEntry, fail);
     }
 
     function gotFileEntry(fileEntry) {
@@ -56,7 +56,7 @@
         console.log(error.code);
     }
 	
-	alert("saaa");
+	alert("saa111aa");
 	alert(var1);
 	alert(var2);
 	
