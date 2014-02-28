@@ -11,8 +11,8 @@ $.post("http://compremosbien.com/bus", {
 
 
 function getDataFromJson() {
-alert("oijaijaoij");
-$.getJSON('data/data.json', function(json) {
-                            alert(json.sites.site[0].expiryDate);
-                        });
+$.getJSON('data/data.json', 
+		function(json) {
+			alert(json.sites.site[0].expiryDate);
+		});
 }
